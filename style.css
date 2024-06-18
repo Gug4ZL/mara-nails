@@ -71,17 +71,21 @@ body {
     display: flex;
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: 170%;
     transform: translate(-50%, -50%);
     height: 65vh;
     width: 85vw;
-    background-color: black;
+    background-color: #edf4f5;
     padding: 20%;
+    border-radius: 38px;
+    
+    
+    
 
     & .logo-container {
         position: fixed;
         top: -19px;
-        left: 50%;
+        left: 49%;
         right: 50%;
         transform: translate(-43%, -7%);
 
@@ -89,7 +93,7 @@ body {
         display: flex;
     }
 
-    & .close {
+    & #btn-close {
         height: 38px;
         width: 46px;
         position: absolute;
@@ -107,8 +111,8 @@ body {
         & img {
 
             position: absolute;
-            top: -5.5rem;
-            left: 6rem;
+            top: 6.5rem;
+            left: 26.5rem;
         }
 
 
@@ -166,14 +170,10 @@ body {
         width: 100%;
         top: 20%;
         left: 0%;
-        border-top: 1px solid #ffffff;
+        border-top: 1px solid #2d4b7e;
 
     }
 }
-
-
-
-
 
 
 
