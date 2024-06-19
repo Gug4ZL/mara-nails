@@ -22,16 +22,20 @@ body {
 
 }
 
-.links {
+.links, .link-nail {
     color: #2d4b7e;
     font-size: 24px;
-
     margin-top: 40px;
-
     cursor: pointer;
 }
 
 .links:hover {
+    color: black;
+    font-size: 26px;
+    transition: 0.5s ease-in-out;
+}
+
+.link-nail:hover{
     color: black;
     font-size: 26px;
     transition: 0.5s ease-in-out;
@@ -67,7 +71,7 @@ body {
     height: 500px;
 }
 
-.eyebrow {
+.eyebrow,.nails {
     display: flex;
     position: fixed;
     top: 50%;
@@ -78,14 +82,13 @@ body {
     background-color: #edf4f5;
     padding: 20%;
     border-radius: 38px;
-    
-    
-    
+   
+
 
     & .logo-container {
         position: fixed;
         top: -19px;
-        left: 49%;
+        left: 47%;
         right: 50%;
         transform: translate(-43%, -7%);
 
@@ -93,7 +96,7 @@ body {
         display: flex;
     }
 
-    & #btn-close {
+    & #btn-close, #close {
         height: 38px;
         width: 46px;
         position: absolute;
@@ -108,13 +111,12 @@ body {
         position: absolute;
         inset: 0;
 
-        & img {
+        & .image-eyebrow {
 
             position: absolute;
-            top: 6.5rem;
-            left: 26.5rem;
+            top: 6rem;
+            left: 26.9rem;
         }
-
 
     }
 
@@ -173,6 +175,23 @@ body {
         border-top: 1px solid #2d4b7e;
 
     }
+}
+
+
+.image-nails {
+    position: absolute;
+    top: 6rem;
+    left: 26.9rem;
+    height: 320px;
+    width: 260px;
+}
+
+.image-nails-2{
+    position: absolute;
+    top: 6rem;
+    left: 26.9rem;
+    height: 320px;
+    width: 300px;
 }
 
 
