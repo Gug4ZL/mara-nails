@@ -244,8 +244,14 @@ p {
 /* Responsividade */
 
 @media (max-width: 600px) {
+
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+
     .container-header {
-        margin-left: 14%;
+        margin-left: 4%;
     }
 
     .container-header img {
