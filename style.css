@@ -185,6 +185,7 @@ p {
 
     }
 }
+
 .x-window {
     height: 27px;
     margin-left: 4px;
@@ -195,7 +196,8 @@ p {
     background-color: #2d4b7e;
     transition: 0.5s;
 }
-#btn-close:hover{
+
+#btn-close:hover {
     background-color: #2d4b7e;
     transition: 0.5s;
 }
@@ -216,7 +218,7 @@ p {
     width: 300px;
 }
 
-.createdBy{
+.createdBy {
     position: absolute;
     font-size: 10px;
     left: 50%;
@@ -243,36 +245,45 @@ p {
 
 /* Responsividade */
 
-@media (max-width: 600px) {
+@media (max-width: 320px) {
 
-    body{
+    body {
         width: 100vw;
         height: 100vh;
     }
 
+    .container-principal{
+        height: 107vh;
+        width: 107vw;
+    }
+
     .container-header {
         margin-left: 4%;
+        gap: 24px
     }
 
     .container-header img {
         height: 100px;
     }
 
-     .links, .link-nail {
-        font-size: 20px;
+    .links,
+    .link-nail {
+        font-size: 14px;
     }
 
-    .links:hover, .link-nail:hover {
+    .links:hover,
+    .link-nail:hover {
         color: default;
         cursor: default;
         font-size: inherit;
     }
 
-    .contact:hover{
+    .contact:hover {
         cursor: default;
     }
 
-    #close:hover,#btn-close:hover{
+    #close:hover,
+    #btn-close:hover {
         background-color: inherit;
     }
 
@@ -286,6 +297,10 @@ p {
 
     .container p {
         margin-top: -196px;
+        width: 200%;
+        font-size: 10px;
+        margin-left: -47px;
+
     }
 
 
@@ -293,41 +308,68 @@ p {
         width: 70%;
     }
 
-    .container-eyebrow, .container-nails {
+    .container-eyebrow,
+    .container-nails {
         padding: 10px;
+
+        & .eyebrow {
+            margin-left: -36px;
+            width: 104vw;
+            height: 70vh;
+        }
+
+        
     }
 
     .logo-container {
-        width: 31%;
+        width: 47%;
     }
 
-    .image-eyebrow, .image-nails {
-        width: 100%;
+    .image-eyebrow,
+    .image-nails {
+        width: 12rem;
+        margin-left: -356px;
     }
 
-    .arrow img {
-        width: 25px;
-        height: 25px;
+    .arrow{
+        display: flex;
+        gap: 106%;
+        margin-left: -24px;
+    }
+        & .arrow img {
+            width: 25px;
+            height: 25px;
+        }
     }
 
-    .contact{
+    .contact {
         background-color: #edf4f5;
         color: #2d4b7e;
+        margin-left: -35px;
     }
 
-    .x-window{
+    .x-window {
         height: 25px;
     }
 
-    #btn-close, #close {
+    #btn-close,
+    #close {
         position: absolute;
         right: 22px;
         top: 38px;
         border: none;
     }
-        
-    .main-img{
+
+    .main-img {
         display: none;
     }
 
-}
+    .image-nails-2 {
+        position: absolute;
+        top: 7rem;
+        left: 6.6rem;
+        height: 276px;
+        width: 278px;
+    }
+
+   
