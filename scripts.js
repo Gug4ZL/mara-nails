@@ -1,25 +1,25 @@
-let prevButton = document.getElementById('prev');
-let nextButton = document.getElementById('next');
-let eyeBrow = document.querySelector('.container-eyebrow');
-let items = eyeBrow.querySelectorAll('.eyebrow .item');
-let linksWindow = document.querySelector('.links')
-let bntClose = document.getElementById('btn-close')
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
+const eyeBrow = document.querySelector('.container-eyebrow');
+const items = eyeBrow.querySelectorAll('.eyebrow .item');
+const linksWindow = document.querySelector('.links')
+const bntClose = document.getElementById('btn-close')
 
-let btnPrev = document.getElementById('btn-prev')
-let btnNext = document.getElementById('btn-next')
-let nails = document.querySelector('.container-nails')
-let itens = nails.querySelectorAll('.nails .item')
-let ButtonClose = document.getElementById('close')
-let nailLink = document.querySelector('.link-nail')
+const btnPrev = document.getElementById('btn-prev')
+const btnNext = document.getElementById('btn-next')
+const nails = document.querySelector('.container-nails')
+const itens = nails.querySelectorAll('.nails .item')
+const ButtonClose = document.getElementById('close')
+const nailLink = document.querySelector('.link-nail')
 
-let slideEyeBrow = 100;
-let openEyeBrow = 0;
+const slideEyeBrow = 100;
+const openEyeBrow = 0;
 
 
 let active = 0;
-let firstPosition = 0;
-let lastPosition = items.length - 1;
-let nailsPosition = itens.length - 1;
+const firstPosition = 0;
+const lastPosition = items.length - 1;
+const nailsPosition = itens.length - 1;
 
 
 if (!eyeBrow.querySelector('.eyebrow .item.active')) {
@@ -28,13 +28,13 @@ if (!eyeBrow.querySelector('.eyebrow .item.active')) {
 
 
 nextButton.onclick = () => {
-    let itemOld = eyeBrow.querySelector('.eyebrow .item.active');
+    const itemOld = eyeBrow.querySelector('.eyebrow .item.active');
     if (itemOld) {
         itemOld.classList.remove('active');
     }
 
     active = (active + 1 > lastPosition) ? firstPosition : active + 1;
-    let itemNew = items[active];
+    const itemNew = items[active];
     if (itemNew) {
         itemNew.classList.add('active');
     }
@@ -42,13 +42,13 @@ nextButton.onclick = () => {
 
 
 prevButton.onclick = () => {
-    let itemOld = eyeBrow.querySelector('.eyebrow .item.active');
+    const itemOld = eyeBrow.querySelector('.eyebrow .item.active');
     if (itemOld) {
         itemOld.classList.remove('active');
     }
 
     active = (active - 1 < firstPosition) ? lastPosition : active - 1;
-    let itemNew = items[active];
+    const itemNew = items[active];
     if (itemNew) {
         itemNew.classList.add('active');
     }
@@ -60,13 +60,13 @@ if (!nails.querySelector('.nails .item.active')) {
 
 
 btnNext.onclick = () => {
-    let itemOld = nails.querySelector('.nails .item.active');
+    const itemOld = nails.querySelector('.nails .item.active');
     if (itemOld) {
         itemOld.classList.remove('active');
     }
 
     active = (active + 1 > nailsPosition) ? firstPosition : active + 1;
-    let itemNew = itens[active];
+    const itemNew = itens[active];
     if (itemNew) {
         itemNew.classList.add('active');
     }
@@ -74,13 +74,13 @@ btnNext.onclick = () => {
 
 
 btnPrev.onclick = () => {
-    let itemOld = nails.querySelector('.nails .item.active');
+    const itemOld = nails.querySelector('.nails .item.active');
     if (itemOld) {
         itemOld.classList.remove('active');
     }
 
     active = (active - 1 < firstPosition) ? nailsPosition : active - 1;
-    let itemNew = itens[active];
+    const itemNew = itens[active];
     if (itemNew) {
         itemNew.classList.add('active');
     }
@@ -88,28 +88,24 @@ btnPrev.onclick = () => {
     
 
     linksWindow.onclick = () => {
-        eyeBrow.style.opacity = 1
-        eyeBrow.style.transform = "translateX(" + openEyeBrow + "vw)"
+        eyeBrow.style.display = "block"
+        eyeBrow.style.transform = `translateX(${ openEyeBrow }vw)`
         eyeBrow.style.position = "fixed"
         eyeBrow.style.top = "50%"
         eyeBrow.style.left = "50%"
     }
 
     bntClose.onclick = () => {
-        eyeBrow.style.opacity = 0
-        eyeBrow.style.position = "fixed"
-        eyeBrow.style.left = "170%"
+        eyeBrow.style.display = "none"
     }
 
     ButtonClose.onclick = () => {
-        nails.style.opacity = 0
-        nails.style.position = "fixed"
-        nails.style.left = "170%"
+        nails.style.display = "none"
     }
 
     nailLink.onclick = () =>{
-        nails.style.opacity = 1
-        nails.style.transform = "translateX(" + openEyeBrow + "vw)"
+        nails.style.display = "block"
+        nails.style.transform = `translateX(${ openEyeBrow }vw)`
         nails.style.position = "fixed"
         nails.style.top = "50%"
         nails.style.left = "50%"

@@ -60,11 +60,12 @@
     .container-nails {
         padding: 10px;
 
-        & .eyebrow {
+        & .eyebrow, .nails {
             margin-left: -36px;
             width: 104vw;
             height: 70vh;
         }
+
 
 
     }
@@ -75,8 +76,9 @@
 
     .image-eyebrow,
     .image-nails {
-        width: 12rem;
-        margin-left: -356px;
+        width: 14rem;
+        margin-left: -314px;
+        margin-top: 126px;
     }
 
     .arrow {
@@ -89,42 +91,48 @@
         width: 25px;
         height: 25px;
     }
-}
+    
+    & #btn-prev, #btn-next, #prev, #next{
+        background: none;
+    }
+    .contact {
+        background-color: #edf4f5;
+        color: #2d4b7e;
+        margin-left: -88px;
+    }
+    
+    .x-window {
+        height: 25px;
+    }
+    
+    #btn-close,
+    #close {
+        position: absolute;
+        right: 22px;
+        top: 38px;
+        border: none;
+    }
+    
+    .main-img {
+        display: none;
+    }
+    
+    .image-nails-2 {
+        position: absolute;
+        top: 14rem;
+        left: 6rem;
+        height: 276px;
+        width: 278px;
+    }
+    
+    .cratedBy {
+        position: absolute;
+        font-size: 7px;
+        left: 38%;
+        top: 80%;
+        transform: translateX(-50% -80%);
+    }
 
-.contact {
-    background-color: #edf4f5;
-    color: #2d4b7e;
-    margin-left: -88px;
-}
 
-.x-window {
-    height: 25px;
-}
-
-#btn-close,
-#close {
-    position: absolute;
-    right: 22px;
-    top: 38px;
-    border: none;
-}
-
-.main-img {
-    display: none;
-}
-
-.image-nails-2 {
-    position: absolute;
-    top: 7rem;
-    left: 6.6rem;
-    height: 276px;
-    width: 278px;
-}
-
-.cratedBy {
-    position: absolute;
-    font-size: 7px;
-    left: 38%;
-    top: 80%;
-    transform: translateX(-50% -80%);
+    
 }
