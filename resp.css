@@ -2,7 +2,7 @@
 
 
     .container-header {
-        margin-left: -2%;
+        margin-left: 10%;
         gap: 20px;
         padding: 5px;
 
@@ -45,7 +45,10 @@
     .container p {
         margin-top: -368px;
         font-size: 10px;
-        margin-left: -82px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 280%;
     }
 
 
@@ -123,4 +126,5 @@
     font-size: 7px;
     left: 38%;
     top: 80%;
+    transform: translateX(-50% -80%);
 }
