@@ -20,14 +20,10 @@
 
     .links:hover,
     .link-nail:hover {
-        color: default;
-        cursor: default;
+        color: #2d4b7e;
         font-size: inherit;
     }
 
-    .contact:hover {
-        cursor: default;
-    }
 
     #close:hover,
     #btn-close:hover {
@@ -77,8 +73,8 @@
     .image-eyebrow,
     .image-nails {
         width: 14rem;
-        margin-left: -314px;
-        margin-top: 126px;
+        margin-left: -320px;
+        margin-top: 108px;
     }
 
     .arrow {
